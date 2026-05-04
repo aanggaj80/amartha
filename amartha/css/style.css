@@ -1505,3 +1505,18 @@ body {
         flex-direction: column;
     }
 }
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-text strong {
+    font-size: 18px;
+    color: #2563eb;
+}
+
+.logo-text small {
+    font-size: 12px;
+    color: #64748b;
+}
