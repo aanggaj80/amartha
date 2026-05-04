@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Prospera Finance</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-university"></i>
+                <span>Prospera</span>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#dashboard" class="nav-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+            <a href="#pinjaman" class="nav-item">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span>Pinjaman</span>
+            </a>
+            <a href="#transaksi" class="nav-item">
+                <i class="fas fa-exchange-alt"></i>
+                <span>Transaksi</span>
+            </a>
+            <a href="#profil" class="nav-item">
+                <i class="fas fa-user"></i>
+                <span>Profil</span>
+            </a>
+            <a href="#laporan" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Laporan</span>
+            </a>
+            <a href="#bantuan" class="nav-item">
+                <i class="fas fa-headset"></i>
+                <span>Bantuan</span>
+            </a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <img src="images/user-avatar.jpg" alt="User" class="user-avatar">
+                <div>
+                    <div class="user-name">Ibu Sari</div>
+                    <div class="user-phone">0812-3456-7890</div>
+                </div>
+            </div>
+            <button class="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                Keluar
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Dashboard</h1>
+            </div>
+            <div class="topbar-right">
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </div>
+                <div class="user-menu">
+                    <img src="images/user-avatar.jpg" alt="User" class="user-avatar-small">
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card primary">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>Rp 45.000.000</h3>
+                        <p>Pinjaman Aktif</p>
+                    </div>
+                </div>
+                <div class="stat-card success">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>3</h3>
+                        <p>Pinjaman Berhasil</p>
+                    </div>
+                </div>
+                <div class="stat-card warning">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>Pinjaman Menunggu</p>
+                    </div>
+                </div>
+                <div class="stat-card info">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>14 Hari</h3>
+                        <p>Tempo Terdekat</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h2>Aksi Cepat</h2>
+                <div class="actions-grid">
+                    <button class="action-card primary">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>Ajukan Pinjaman Baru</span>
+                    </button>
+                    <button class="action-card">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Bayar Cicilan</span>
+                    </button>
+                    <button class="action-card">
+                        <i class="fas fa-file-upload"></i>
+                        <span>Upload Dokumen</span>
+                    </button>
+                    <button class="action-card">
+                        <i class="fas fa-history"></i>
+                        <span>Riwayat Transaksi</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recent Loans -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Pinjaman Terbaru</h3>
+                    <a href="#" class="view-all">Lihat Semua →</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="loans-table">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Produk</th>
+                                <th>Nominal</th>
+                                <th>Status</th>
+                                <th>Tempo</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>Modal Usaha</td>
+                                <td>Rp 25.000.000</td>
+                                <td><span class="status active">Aktif</span></td>
+                                <td>14 Hari</td>
+                                <td>
+                                    <button class="btn-small primary">Detail</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td>Pembelian Barang</td>
+                                <td>Rp 20.000.000</td>
+                                <td><span class="status pending">Menunggu</span></td>
+                                <td>-</td>
+                                <td>
+                                    <button class="btn-small warning">Cek Status</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Transaksi Terakhir</h3>
+                </div>
+                <div class="transactions-list">
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-type income">Cicilan Dibayar</div>
+                            <div class="transaction-date">Hari ini, 10:30</div>
+                        </div>
+                        <div class="transaction-amount">+ Rp 1.250.000</div>
+                    </div>
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-type outcome">Biaya Admin</div>
+                            <div class="transaction-date">Kemarin, 14:20</div>
+                        </div>
+                        <div class="transaction-amount">- Rp 50.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Prospera Finance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (sama seperti sebelumnya) -->
+    <header class="header">
+        <!-- Copy header dari index.html -->
+    </header>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-image">
+                    <img src="images/register-hero.png" alt="Register Prospera">
+                </div>
+                <div class="auth-form">
+                    <div class="auth-header">
+                        <h1>Bergabung Bersama Ribuan UMKM</h1>
+                        <p>Daftar dan mulai kembangkan usaha Anda sekarang</p>
+                    </div>
+                    
+                    <!-- Stepper -->
+                    <div class="stepper">
+                        <div class="step active">
+                            <div class="step-circle">1</div>
+                            <span>Data Diri</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-circle">2</div>
+                            <span>Usaha</span>
+                        </div>
+                        <div class="step">
+                            <div class="step-circle">3</div>
+                            <span>Selesai</span>
+                        </div>
+                    </div>
+
+                    <form id="registerForm" class="auth-form-group">
+                        <!-- Step 1: Data Diri -->
+                        <div class="step-content active" data-step="1">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nama Lengkap</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" id="fullName" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>No. HP</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-phone"></i>
+                                        <input type="tel" id="phone" placeholder="081234567890" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" id="email" placeholder="email@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>KTP</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-id-card"></i>
+                                        <input type="text" id="ktp" placeholder="1234567890123456" maxlength="16">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <div class="input-group">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="password" placeholder="Minimal 6 karakter" minlength="6" required>
+                                    <i class="fas fa-eye toggle-password" id="toggleRegPassword"></i>
+                                </div>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="terms" required>
+                                    <span class="checkmark"></span>
+                                    Saya setuju dengan <a href="#">Syarat & Ketentuan</a> dan <a href="#">Kebijakan Privasi</a>
+                                </label>
+                            </div>
+                            <button type="button" class="btn-primary btn-full next-step" data-next="2">Lanjut ke Langkah 2</button>
+                        </div>
+
+                        <!-- Step 2: Data Usaha -->
+                        <div class="step-content" data-step="2">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Nama Usaha</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-store"></i>
+                                        <input type="text" id="businessName" placeholder="Toko Sumber Rezeki" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Jenis Usaha</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-briefcase"></i>
+                                        <select id="businessType" required>
+                                            <option value="">Pilih Jenis Usaha</option>
+                                            <option value="toko-kelontong">Toko Kelontong</option>
+                                            <option value="makanan-minuman">Makanan & Minuman</option>
+                                            <option value="fashion">Fashion & Busana</option>
+                                            <option value="jasa">Jasa</option>
+                                            <option value="lainnya">Lainnya</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Alamat Usaha</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <input type="text" id="businessAddress" placeholder="Jl. Merdeka No. 123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Lama Usaha</label>
+                                    <div class="input-group">
+                                        <i class="fas fa-calendar"></i>
+                                        <select id="businessAge" required>
+                                            <option value="">Pilih Lama Usaha</option>
+                                            <option value="kurang-1">Kurang dari 1 tahun</option>
+                                            <option value="1-3">1-3 tahun</option>
+                                            <option value="3-5">3-5 tahun</option>
+                                            <option value="lebih-5">Lebih dari 5 tahun</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Omzet Bulanan (Rp)</label>
+                                <div class="input-group">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <select id="monthlyRevenue" required>
+                                        <option value="">Pilih Omzet</option>
+                                        <option value="1-5">Rp 1 - 5 juta</option>
+                                        <option value="5-10">Rp 5 - 10 juta</option>
+                                        <option value="10-25">Rp 10 - 25 juta</option>
+                                        <option value="25-50">Rp 25 - 50 juta</option>
+                                        <option value="50-lebih">Rp 50 juta ke atas</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn-secondary prev-step" data-prev="1">Kembali</button>
+                                <button type="submit" class="btn-primary next-step">Daftar Sekarang</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Prospera Finance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header (sama seperti index.html) -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Prospera Finance" class="logo-img">
+                        <span>Prospera</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang</a></li>
+                    <li><a href="services.html" class="nav-link active">Layanan</a></li>
+                    <li><a href="products.html" class="nav-link">Produk</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="login.html" class="btn-login">Masuk</a>
+                    <a href="register.html" class="btn-register">Daftar</a>
+                </div>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Layanan <span class="highlight">Lengkap</span> untuk UMKM</h1>
+                <p>Pilih layanan yang sesuai dengan kebutuhan usaha Anda. Dari pembiayaan hingga pelatihan bisnis.</p>
+                <div class="services-stats">
+                    <div class="stat">
+                        <h3>24 Jam</h3>
+                        <p>Pencairan</p>
+                    </div>
+                    <div class="stat">
+                        <h3>0%</h3>
+                        <p>Biaya Admin Awal</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Approval Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Pilih Kategori</span>
+                <h2>Layanan Unggulan Kami</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#pembiayaan" class="category-card active">
+                    <div class="category-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Pembiayaan</h3>
+                    <p>Dapatkan modal usaha cepat dan mudah</p>
+                </a>
+                <a href="#pelatihan" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Pelatihan</h3>
+                    <p>Tingkatkan skill bisnis Anda</p>
+                </a>
+                <a href="#kemitraan" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Kemitraan</h3>
+                    <p>Kerjasama dengan buyer besar</p>
+                </a>
+                <a href="#teknologi" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Teknologi</h3>
+                    <p>Tools digital untuk usaha</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pembiayaan Services -->
+    <section id="pembiayaan" class="service-detail active">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-info">
+                    <h2>Layanan Pembiayaan</h2>
+                    <p class="service-desc">Pembiayaan cepat dan fleksibel untuk segala kebutuhan usaha Anda</p>
+                </div>
+                <a href="products.html" class="btn-primary">Ajukan Sekarang</a>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header-card">
+                        <div class="service-icon primary">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Pinjaman Modal Usaha</h3>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Rp 1.000.000 - Rp 500.000.000</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Tenor 3-24 bulan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Proses 24 jam</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="products.html#modal-usaha" class="btn-small primary">Detail</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header-card">
+                        <div class="service-icon success">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Pinjaman Multiguna</h3>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Untuk beli aset produktif</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Gadget hingga kendaraan</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Plafon hingga Rp 100jt</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="products.html#multiguna" class="btn-small success">Detail</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header-card">
+                        <div class="service-icon warning">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Pembiayaan Kelompok</h3>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Arisan kelompok produktif</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Bunga lebih rendah</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Minimal 5 orang</span>
+                        </div>
+                    </div>
+                    <div class="service-footer">
+                        <a href="products.html#kelompok" class="btn-small warning">Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loan Simulator -->
+            <div class="loan-simulator">
+                <h3>Simulasi Pinjaman</h3>
+                <div class="simulator-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nominal Pinjaman</label>
+                            <select id="loanAmount">
+                                <option value="1000000">Rp 1.000.000</option>
+                                <option value="5000000">Rp 5.000.000</option>
+                                <option value="10000000">Rp 10.000.000</option>
+                                <option value="25000000" selected>Rp 25.000.000</option>
+                                <option value="50000000">Rp 50.000.000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Tenor (bulan)</label>
+                            <select id="loanTenor">
+                                <option value="3">3 bulan</option>
+                                <option value="6">6 bulan</option>
+                                <option value="12" selected>12 bulan</option>
+                                <option value="18">18 bulan</option>
+                                <option value="24">24 bulan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="simulator-result">
+                        <div class="result-item">
+                            <span>Cicilan Bulanan:</span>
+                            <div class="result-value" id="monthlyInstallment">Rp 2.300.000</div>
+                        </div>
+                        <div class="result-item">
+                            <span>Total Bayar:</span>
+                            <div class="result-value" id="totalPayment">Rp 27.600.000</div>
+                        </div>
+                        <div class="result-item">
+                            <span>Bunga:</span>
+                            <div class="result-value" id="interestAmount">Rp 2.600.000</div>
+                        </div>
+                    </div>
+                    <a href="register.html" class="btn-primary btn-large">Ajukan Pinjaman</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pelatihan Services -->
+    <section id="pelatihan" class="service-detail">
+        <div class="container">
+            <div class="service-header">
+                <div class="service-info">
+                    <h2>Pelatihan & Pendampingan</h2>
+                    <p>Tingkatkan kemampuan bisnis Anda melalui pelatihan gratis dari expert</p>
+                </div>
+            </div>
+            <div class="training-grid">
+                <div class="training-card">
+                    <img src="images/training-digital.jpg" alt="Digital Marketing">
+                    <div class="training-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Jualan online di Shopee, Tokopedia, dan Sosmed</p>
+                        <div class="training-meta">
+                            <span><i class="fas fa-clock"></i> 4 jam</span>
+                            <span><i class="fas fa-calendar"></i> Online</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambah training cards lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Siap Mengembangkan Usaha?</h2>
+            <p>Pilih layanan yang sesuai dan mulai sekarang</p>
+            <div class="cta-buttons">
+                <a href="register.html" class="btn-primary btn-large">Mulai Daftar</a>
+                <a href="contact.html" class="btn-secondary btn-large">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy dari index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

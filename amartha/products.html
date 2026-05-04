@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Prospera Finance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Prospera Finance" class="logo-img">
+                        <span>Prospera</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang</a></li>
+                    <li><a href="services.html" class="nav-link">Layanan</a></li>
+                    <li><a href="products.html" class="nav-link active">Produk</a></li>
+                    <li><a href="contact.html" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="login.html" class="btn-login">Masuk</a>
+                    <a href="register.html" class="btn-register">Ajukan</a>
+                </div>
+                <div class="hamburger"><span></span><span></span><span></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Hero -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Pilih <span class="highlight">Produk</span> Sesuai Kebutuhan</h1>
+                <p>Temukan pembiayaan yang tepat untuk mengembangkan usaha Anda</p>
+                <div class="product-filter">
+                    <select id="productFilter">
+                        <option value="all">Semua Produk</option>
+                        <option value="modal">Modal Usaha</option>
+                        <option value="multiguna">Multiguna</option>
+                        <option value="kelompok">Kelompok</option>
+                        <option value="syariah">Syariah</option>
+                    </select>
+                    <div class="filter-chips">
+                        <span class="chip active" data-filter="all">Semua</span>
+                        <span class="chip" data-filter="modal">Modal</span>
+                        <span class="chip" data-filter="multiguna">Multiguna</span>
+                        <span class="chip" data-filter="kelompok">Kelompok</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Product Modal Usaha -->
+                <div class="product-card" data-category="modal">
+                    <div class="product-image">
+                        <img src="images/product-modal.jpg" alt="Modal Usaha">
+                        <div class="product-badge popular">Paling Populer</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3>Pinjaman Modal Usaha</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9 (12.345)</span>
+                            </div>
+                        </div>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <span class="spec-label">Nominal</span>
+                                <span class="spec-value">Rp 1jt - Rp 500jt</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Tenor</span>
+                                <span class="spec-value">3 - 24 Bulan</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Bunga</span>
+                                <span class="spec-value">1.5% - 2.5%/bln</span>
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-check"></i> Cair 24 jam</span>
+                            <span class="feature"><i class="fas fa-check"></i> Tanpa jaminan</span>
+                            <span class="feature"><i class="fas fa-check"></i> Proses online</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-primary product-apply" data-product="modal-usaha">Ajukan</button>
+                            <button class="btn-secondary product-detail">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Multiguna -->
+                <div class="product-card" data-category="multiguna">
+                    <div class="product-image">
+                        <img src="images/product-multiguna.jpg" alt="Multiguna">
+                        <div class="product-badge new">Baru</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3>Pinjaman Multiguna</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.7 (8.901)</span>
+                            </div>
+                        </div>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <span class="spec-label">Nominal</span>
+                                <span class="spec-value">Rp 500rb - Rp 100jt</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Tenor</span>
+                                <span class="spec-value">6 - 36 Bulan</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Bunga</span>
+                                <span class="spec-value">1.8% - 3%/bln</span>
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-check"></i> Beli aset produktif</span>
+                            <span class="feature"><i class="fas fa-check"></i> Gadget & motor</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-primary product-apply" data-product="multiguna">Ajukan</button>
+                            <button class="btn-secondary product-detail">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Kelompok -->
+                <div class="product-card" data-category="kelompok">
+                    <div class="product-image">
+                        <img src="images/product-kelompok.jpg" alt="Kelompok">
+                    </div>
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3>Pembiayaan Kelompok</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span>4.8 (5.678)</span>
+                            </div>
+                        </div>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <span class="spec-label">Nominal</span>
+                                <span class="spec-value">Rp 2jt - Rp 50jt</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Minimal Anggota</span>
+                                <span class="spec-value">5 Orang</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Bunga</span>
+                                <span class="spec-value">1.2% - 2%/bln</span>
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-check"></i> Bunga lebih rendah</span>
+                            <span class="feature"><i class="fas fa-check"></i> Arisan produktif</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-primary product-apply" data-product="kelompok">Ajukan</button>
+                            <button class="btn-secondary product-detail">Detail</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Syariah -->
+                <div class="product-card" data-category="syariah">
+                    <div class="product-image">
+                        <img src="images/product-syariah.jpg" alt="Syariah">
+                        <div class="product-badge halal">Syariah</div>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3>Pembiayaan Syariah</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0 (2.345)</span>
+                            </div>
+                        </div>
+                        <div class="product-specs">
+                            <div class="spec">
+                                <span class="spec-label">Nominal</span>
+                                <span class="spec-value">Rp 1jt - Rp 100jt</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Skema</span>
+                                <span class="spec-value">Murabahah</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-label">Margin</span>
+                                <span class="spec-value">1.5% - 2.8%/bln</span>
+                            </div>
+                        </div>
+                        <div class="product-features">
+                            <span class="feature"><i class="fas fa-check"></i> Sesuai syariah</span>
+                            <span class="feature"><i class="fas fa-check"></i> Tanpa riba</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn-primary product-apply" data-product="syariah">Ajukan</button>
+                            <button class="btn-secondary product-detail">Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Bandingkan</span>
+                <h2>Pilih Produk Terbaik</h2>
+            </div>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Modal Usaha</th>
+                            <th>Multiguna</th>
+                            <th>Kelompok</th>
+                            <th>Syariah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Nominal</strong></td>
+                            <td>Rp 1jt - 500jt</td>
+                            <td>Rp 500rb - 100jt</td>
+                            <td>Rp 2jt - 50jt</td>
+                            <td>Rp 1jt - 100jt</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tenor</strong></td>
+                            <td>3-24 bln</td>
+                            <td>6-36 bln</td>
+                            <td>6-18 bln</td>
+                            <td>3-24 bln</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bunga/Margin</strong></td>
+                            <td>1.5-2.5%</td>
+                            <td>1.8-3%</td>
+                            <td>1.2-2%</td>
+                            <td>1.5-2.8%</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td><strong>Cocok untuk</strong></td>
+                            <td>Putar modal</td>
+                            <td>Beli aset</td>
+                            <td>Kelompok</td>
+                            <td>Syariah</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Pilih Produk dan Mulai Usaha</h2>
+            <p>Daftar sekarang dan dapatkan pembiayaan dalam 24 jam</p>
+            <a href="register.html" class="btn-primary btn-large">Ajukan Pinjaman</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copy dari index.html -->
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
