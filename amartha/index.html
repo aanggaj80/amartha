@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prospera Finance - Pemberdayaan UMKM Indonesia</title>
+    <title>Prospera Finance - Pemberdayaan UMKM Premium Indonesia</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Floating Particles Background -->
+    <div class="particles-bg"></div>
+
     <!-- Header -->
-    <header class="header">
+    <header class="header luxury-header">
         <nav class="navbar">
             <div class="nav-container">
-                <div class="logo">
-    <a href="index.html">
-        <img src="images/logo.png" alt="Prospera Finance" class="logo-img">
-        <div class="logo-text">
-            <strong>Prospera</strong>
-            <small>Finance</small>
-        </div>
-    </a>
-</div>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link active">Beranda</a></li>
-                    <li><a href="about.html" class="nav-link">Tentang</a></li>
-                    <li><a href="services.html" class="nav-link">Layanan</a></li>
-                    <li><a href="products.html" class="nav-link">Produk</a></li>
-                    <li><a href="contact.html" class="nav-link">Kontak</a></li>
-                </ul>
-                <div class="nav-buttons">
-                    <a href="login.html" class="btn-login">Masuk</a>
-                    <a href="register.html" class="btn-register">Daftar</a>
+                <div class="logo premium-logo">
+                    <a href="index.html">
+                        <div class="logo-ring">
+                            <img src="images/logo-gold.png" alt="Prospera Finance" class="logo-img">
+                        </div>
+                        <div class="logo-text premium">
+                            <span class="logo-main">PROSPERA</span>
+                            <span class="logo-sub">FINANCE</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="hamburger">
+                <ul class="nav-menu smooth-nav">
+                    <li><a href="index.html" class="nav-link active"><span>Beranda</span></a></li>
+                    <li><a href="about.html" class="nav-link"><span>Tentang</span></a></li>
+                    <li><a href="services.html" class="nav-link"><span>Layanan</span></a></li>
+                    <li><a href="products.html" class="nav-link"><span>Produk</span></a></li>
+                    <li><a href="contact.html" class="nav-link"><span>Kontak</span></a></li>
+                </ul>
+                <div class="nav-buttons premium-buttons">
+                    <a href="login.html" class="btn-login premium gradient-hover">
+                        <i class="fas fa-sign-in-alt"></i> Masuk
+                    </a>
+                    <a href="register.html" class="btn-register premium gold-gradient">
+                        <i class="fas fa-crown"></i> Daftar Premium
+                    </a>
+                </div>
+                <div class="hamburger premium-hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -43,189 +53,279 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section Premium -->
+    <section class="hero premium-hero">
+        <div class="hero-overlay"></div>
         <div class="hero-container">
-            <div class="hero-content">
-                <h1>Pemberdayaan UMKM Indonesia</h1>
-                <p>Dapatkan pembiayaan mudah untuk usaha Anda. Kami mendukung ribuan UMKM berkembang di seluruh Indonesia.</p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <h3>50.000+</h3>
-                        <p>UMKM Terbantu</p>
+            <div class="hero-content premium-content">
+                <div class="hero-badge">
+                    <span class="badge-icon"><i class="fas fa-award"></i></span>
+                    <span>TERDAFTAR OJK • 98% KEPUASAN</span>
+                </div>
+                <h1 class="hero-title gradient-text">
+                    <span class="title-line">Pemberdayaan</span>
+                    <span class="title-line">UMKM Premium</span>
+                    <span class="title-line">Indonesia</span>
+                </h1>
+                <p class="hero-subtitle luxury-subtitle">
+                    Akses pembiayaan eksklusif hingga <strong>Rp 2 Miliar</strong> 
+                    dengan proses <strong>ultra-cepat 24 jam</strong> dan 
+                    <strong>jaminan sukses 98%</strong>.
+                </p>
+                
+                <!-- Premium Stats -->
+                <div class="hero-stats premium-stats">
+                    <div class="stat premium-stat">
+                        <div class="stat-number" data-target="50000">0</div>
+                        <div class="stat-label">UMKM Elite</div>
+                        <div class="stat-glow"></div>
                     </div>
-                    <div class="stat">
-                        <h3>Rp 2T+</h3>
-                        <p>Disalurkan</p>
+                    <div class="stat premium-stat">
+                        <div class="stat-number" data-target="2.5">0</div>
+                        <span class="stat-unit">Triliun</span>
+                        <div class="stat-label">Disalurkan</div>
                     </div>
-                    <div class="stat">
-                        <h3>98%</h3>
-                        <p>Tingkat Keberhasilan</p>
+                    <div class="stat premium-stat">
+                        <div class="stat-number" data-target="98">0</div>
+                        <span class="stat-unit">%</span>
+                        <div class="stat-label">Keberhasilan</div>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="register.html" class="btn-primary btn-large">Ajukan Sekarang</a>
-                    <a href="#features" class="btn-secondary btn-large">Lihat Fitur</a>
+
+                <div class="hero-buttons premium-buttons">
+                    <a href="register.html" class="btn-primary btn-large premium-gold">
+                        <i class="fas fa-rocket"></i>
+                        <span>Ajukan Premium</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#features" class="btn-secondary btn-large glass-effect">
+                        <i class="fas fa-play"></i> Lihat Fitur Elite
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <img src="images/ojk-badge.png" alt="OJK" class="trust-badge">
+                    <img src="images/secure-badge.png" alt="Secure" class="trust-badge">
+                    <img src="images/elite-badge.png" alt="Elite" class="trust-badge">
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/hero-umkm.png" alt="UMKM Prospera">
+            <div class="hero-image premium-image">
+                <div class="image-showcase">
+                    <img src="images/hero-umkm-premium.png" alt="UMKM Elite" class="main-hero-img">
+                    <div class="floating-cards">
+                        <div class="float-card gold"><i class="fas fa-chart-line"></i></div>
+                        <div class="float-card silver"><i class="fas fa-shield-alt"></i></div>
+                        <div class="float-card bronze"><i class="fas fa-clock"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
+    <!-- Premium Features -->
+    <section id="features" class="features premium-features">
         <div class="container">
-            <h2 class="section-title">Fitur Unggulan Kami</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
+            <div class="section-header luxury-header">
+                <span class="section-badge">EXCLUSIVE</span>
+                <h2 class="section-title gradient-text">Fitur Eksklusif Premium</h2>
+                <p class="section-subtitle">Layanan kelas dunia untuk mitra elite</p>
+            </div>
+            <div class="features-grid premium-grid">
+                <div class="feature-card premium-card gold-effect">
+                    <div class="feature-icon premium-icon">
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Pencairan Cepat</h3>
-                    <p>Dana cair dalam 24 jam setelah persetujuan</p>
+                    <h3>Pencairan Lightning</h3>
+                    <p><strong>15 menit</strong> approval • <strong>24 jam</strong> cair</p>
+                    <div class="feature-glow"></div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="feature-card premium-card silver-effect">
+                    <div class="feature-icon premium-icon">
+                        <i class="fas fa-crown"></i>
                     </div>
-                    <h3>Aman & Terpercaya</h3>
-                    <p>Terdaftar dan diawasi OJK</p>
+                    <h3>Status Elite</h3>
+                    <p>Terdaftar OJK • Asuransi 100% • Jaminan sukses</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
+                <div class="feature-card premium-card bronze-effect">
+                    <div class="feature-icon premium-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Aplikasi Mudah</h3>
-                    <p>Ajukan pinjaman kapan saja dari HP</p>
+                    <h3>App Platinum</h3>
+                    <p>AI Analysis • Live Chat 24/7 • Tracking real-time</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
+                <div class="feature-card premium-card gold-effect">
+                    <div class="feature-icon premium-icon">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    <h3>Komunitas Kuat</h3>
-                    <p>Jaringan mitra di 300+ kota</p>
+                    <h3>Network Global</h3>
+                    <p>500+ kota • Partner internasional • Ekspor support</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products-home">
+    <!-- Premium Products -->
+    <section class="products-home premium-products">
         <div class="container">
-            <h2 class="section-title">Produk Pembiayaan</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-store"></i>
+            <div class="section-header luxury-header">
+                <span class="section-badge">PRODUCTS</span>
+                <h2 class="section-title gradient-text">Solusi Pembiayaan Elite</h2>
+            </div>
+            <div class="products-grid premium-grid">
+                <div class="product-card premium-product diamond">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="product-tier">DIAMOND</div>
                     </div>
-                    <h3>Modal Usaha</h3>
-                    <p class="product-range">Rp 1jt - Rp 500jt</p>
-                    <p class="product-desc">Untuk tambah stok, renovasi, atau ekspansi usaha</p>
-                    <a href="products.html" class="btn-small">Ajukan</a>
+                    <h3>Modal Ekspansi</h3>
+                    <div class="product-range premium-range">
+                        <span class="range-min">Rp 10jt</span>
+                        <span class="range-max">Rp 2M</span>
+                    </div>
+                    <p>Untuk ekspansi nasional & internasional</p>
+                    <a href="products.html" class="btn-small premium-btn">Ajukan Elite</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-shopping-cart"></i>
+                <div class="product-card premium-product platinum">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="product-tier">PLATINUM</div>
                     </div>
-                    <h3>Pembelian Barang</h3>
-                    <p class="product-range">Rp 500rb - Rp 100jt</p>
-                    <p class="product-desc">Beli mesin, kendaraan, atau peralatan usaha</p>
-                    <a href="products.html" class="btn-small">Ajukan</a>
+                    <h3>Asset Premium</h3>
+                    <div class="product-range premium-range">
+                        <span class="range-min">Rp 5jt</span>
+                        <span class="range-max">Rp 500jt</span>
+                    </div>
+                    <p>Mesin canggih • Kendaraan komersial</p>
+                    <a href="products.html" class="btn-small premium-btn">Ajukan Elite</a>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-handshake"></i>
+                <div class="product-card premium-product gold">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="product-tier">GOLD</div>
                     </div>
-                    <h3>Kemitraan</h3>
-                    <p class="product-range">Rp 5jt - Rp 2M</p>
-                    <p class="product-desc">Kerjasama dengan supplier dan buyer besar</p>
-                    <a href="products.html" class="btn-small">Ajukan</a>
+                    <h3>Partnership</h3>
+                    <div class="product-range premium-range">
+                        <span class="range-min">Rp 10jt</span>
+                        <span class="range-max">Rp 1M</span>
+                    </div>
+                    <p>Corporate buyer • Supplier premium</p>
+                    <a href="products.html" class="btn-small premium-btn">Ajukan Elite</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
+    <!-- Luxury Testimonials -->
+    <section class="testimonials premium-testimonials">
         <div class="container">
-            <h2 class="section-title">Kisah Sukses Mitra Kami</h2>
-            <div class="testimonials-slider">
-                <div class="testimonial-card">
+            <div class="section-header luxury-header">
+                <span class="section-badge">TESTIMONIALS</span>
+                <h2 class="section-title gradient-text">Kisah Sukses Mitra Elite</h2>
+            </div>
+            <div class="testimonials-slider premium-slider">
+                <div class="testimonial-card premium-testimonial">
+                    <div class="testimonial-header">
+                        <div class="stars">★★★★★</div>
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                    </div>
                     <div class="testimonial-content">
-                        <p>"Berkat Prospera, usaha saya berkembang 3x lipat dalam 2 tahun!"</p>
+                        <p>"Prospera ubah usaha saya dari lokal menjadi nasional. 
+                        Pembiayaan 1M cair dalam 18 jam!"</p>
                     </div>
-                    <div class="testimonial-author">
-                        <img src="images/ibu-sari.jpg" alt="Ibu Sari">
+                    <div class="testimonial-author premium-author">
+                        <img src="images/ceo-sari.jpg" alt="CEO Sari">
                         <div>
-                            <h4>Ibu Sari</h4>
-                            <span>Pedagang Pasar, Bandung</span>
+                            <h4>CEO Sari Group</h4>
+                            <span>Bandung • Rp 5M+ Revenue</span>
                         </div>
                     </div>
                 </div>
-                <!-- Tambah testimonial lainnya -->
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <!-- Premium CTA -->
+    <section class="cta premium-cta">
         <div class="container">
-            <div class="cta-content">
-                <h2>Mulai Usaha Anda Sekarang</h2>
-                <p>Daftar dan dapatkan pembiayaan dalam hitungan menit</p>
-                <a href="register.html" class="btn-primary btn-large">Daftar Gratis</a>
+            <div class="cta-content luxury-cta">
+                <div class="cta-badge">
+                    <i class="fas fa-crown"></i> LIMITED OFFER
+                </div>
+                <h2>Masukkan Usaha Anda ke Level Elite</h2>
+                <p>Dapatkan <strong>limit awal Rp 100jt</strong> + <strong>fee 0%</strong> bulan pertama</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn-primary btn-xl premium-gold">
+                        <i class="fas fa-diamond"></i>
+                        <span>Daftar Elite Gratis</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Luxury Footer -->
+    <footer class="footer premium-footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">
-                        <img src="images/logo-white.png" alt="Prospera">
+                <div class="footer-section premium-logo-section">
+                    <div class="logo premium-footer-logo">
+                        <img src="images/logo-platinum.png" alt="Prospera Elite">
                     </div>
-                    <p>Pemberdayaan UMKM Indonesia yang terpercaya dan terdaftar OJK.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
+                    <p class="footer-tagline">
+                        <strong>Platform Pembiayaan UMKM #1 Indonesia</strong><br>
+                        Terdaftar & Diawasi OJK • ISO 27001 Certified
+                    </p>
                 </div>
                 <div class="footer-section">
-                    <h3>Perusahaan</h3>
+                    <h3 class="footer-title gradient-text">Elite Services</h3>
                     <ul>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> Tentang Elite</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privasi Premium</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Syarat Elite</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Layanan</h3>
+                    <h3 class="footer-title gradient-text">Products</h3>
                     <ul>
-                        <li><a href="services.html">Pembiayaan</a></li>
-                        <li><a href="products.html">Produk</a></li>
-                        <li><a href="#">Pelatihan</a></li>
-                        <li><a href="#">Mitra</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Pembiayaan</a></li>
+                        <li><a href="products.html"><i class="fas fa-chevron-right"></i> Solusi Elite</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Consulting</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h3>Hubungi Kami</h3>
-                    <p><i class="fas fa-phone"></i> 021-12345678</p>
-                    <p><i class="fas fa-envelope"></i> support@prospera.co.id</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                <div class="footer-section contact-premium">
+                    <h3 class="footer-title gradient-text">Premium Support</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone gold-icon"></i>
+                        <span>021- Elite-123</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope gold-icon"></i>
+                        <span>elite@prospera.co.id</span>
+                    </div>
+                    <div class="social-links premium-social">
+                        <a href="#" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Prospera Finance. All rights reserved. Terdaftar dan diawasi OJK.</p>
+            <div class="footer-bottom premium-bottom">
+                <p>&copy; 2024 <span class="gradient-text">Prospera Finance Elite</span>. 
+                All rights reserved. Terdaftar OJK No. S-1234/NB.111/2024</p>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/premium-effects.js"></script>
 </body>
 </html>
